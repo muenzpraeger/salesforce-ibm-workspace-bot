@@ -1,0 +1,22 @@
+{
+	"name": "Salesforce and IBM Watson Workspace Bot",
+	"description": "Node",
+	"keywords": [
+		"salesforce",
+		"ibm workspace",
+		"node",
+		"bot"
+	],
+	"website": "https://github.com/muenzpraeger/salesforce-ibm-workspace-bot",
+	"repository": "https://github.com/muenzpraeger/salesforce-ibm-workspace-bot",
+	"success_url": "/",
+	"env": {
+		"SALESFORCE_CONSUMER_KEY":     { "description": "Consumer Key of the Connected App in Salesforce" },
+		"SALESFORCE_CONSUMER_SECRET":  { "description": "Consumer Secret of the Connected App in Salesforce" },
+		"SALESFORCE_USERNAME":  { "description": "Username of the Salesforce integration user" },
+		"SALESFORCE_PASSWORD":  { "description": "Password of the Salesforce integration user" },
+		"WW_APP_ID":  { "description": "Watson Workspace App ID" },
+		"WW_APP_SECRET":  { "description": "Watson Workspace App Secret" },
+		"WW_WEBHOOK_SECRET":  { "description": "Watson Workspace Webhook Secret" }
+  }
+}
