@@ -6,7 +6,7 @@ This example application showcases how to build a simple bot that displays data 
 
 This image showcases the setup:
 
-<center>![](resources/workspace_integration.png)</center>
+<center>![Integration](resources/workspace_integration.png)</center>
 
 When a user enters a specific phrase/text in a Workspace space an external webhook, a node.js app on Heroku, will be called. The call contains the entered text which is then evaluated against pre-defined RegEx patterns. If a pattern matches an according REST call to a Salesforce org is executed. The returned data of that call then gets posted to the origin Workspace space.
 
