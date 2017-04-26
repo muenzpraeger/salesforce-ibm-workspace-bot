@@ -47,6 +47,14 @@ let processText = (message, spaceId)  => {
         return;
     }
 
+    match = message.match(/top opportunities/i);
+    if (match) {
+        salesforce.getTopOpportunities(5).then(opptys => {
+            wwMessaging.sendMessage('', spaceId, '', wwFormatting.formatTopOpportunities(opptys));
+        });
+        return;
+    }
+
 };
 
 // Process webhook verification requests
